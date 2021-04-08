@@ -1,0 +1,17 @@
+<div class="form-data container">
+    <h2 class="center">New Course</h2>
+    <form action="/courses/create" method="POST">
+        <label for="txtTitle" class="col-form-label">Title</label>
+        <input type="text" name="title" id="txtTitle" class="form-control" autofocus required>
+
+        <label for="txtDesc" class="col-form-label">Description</label>
+        <input type="text" name="description" id="txtDesc" class="form-control" required>
+
+        <label for="txtMaxStudents" class="col-form-label">Max Students</label>
+        <input type="text" name="maxStudents" id="txtMaxStudents" class="form-control" required>
+
+        <label for="txtCost" class="col-form-label">Cost</label>
+        <input type="text" name="cost" id="txtCost" class="form-control" required>
+
+        <button type="submit" class="button mt-2">Create</button>
+    </form>

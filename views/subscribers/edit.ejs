@@ -1,0 +1,12 @@
+<div class="form-data container">
+    <h2 class="center">Edit Subscriber</h2>
+    <form action="<%=`/subscribers/${subscriber._id}/update?_method=PUT`%>" method="POST">
+        <label for="txtName" class="col-form-label">Name</label>
+        <input type="text" name="name" id="txtName" class="form-control" autofocus required value="<%= subscriber.name %>">
+        <label for="txtEmail" class="col-form-label">Email</label>
+        <input type="email" name="email" id="txtEmail" class="form-control" required value="<%= subscriber.email %>">
+        <label for="txtZip" class="col-form-label">Zip Code</label>
+        <input type="text" name="zipCode" id="txtZip" class="form-control" required value="<%= subscriber.zipCode %>">
+        <button class="button mt-2" type="submit">Save</button>
+    </form>
+</div>

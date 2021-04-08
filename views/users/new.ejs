@@ -1,0 +1,22 @@
+<div class="form-data container">
+    <h2 class="center">New User</h2>
+    <form action="/users/create" method="POST">
+
+        <label for="txtFName" class="col-form-label">First Name</label>
+        <input type="text" name="first" id="txtFName" class="form-control" autofocus required>
+
+        <label for="txtLName" class="col-form-label">Last Name</label>
+        <input type="text" name="last" id="txtLName" class="form-control" autofocus required>
+
+        <label for="txtEmail" class="col-form-label">Email</label>
+        <input type="email" name="email" id="txtEmail" class="form-control" required>
+
+        <label for="txtZip" class="col-form-label">Zip Code</label>
+        <input type="text" name="zipCode" id="txtZip" class="form-control" required>
+
+        <label for="txtPassword" class="col-form-label">Password</label>
+        <input type="password" name="password" id="txtPassword" class="form-control" required>
+
+        <button class="button mt-2" type="submit" class="button">Create</button>
+    </form>
+</div>

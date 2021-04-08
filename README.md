@@ -1,5 +1,5 @@
 # webapp_2021_confetti_cuisine
-## MongoDB Classwork
+## CRUD Classwork
 - Lora Kalthoff
 - WebAppDev CSCI 4800
 
@@ -9,6 +9,5 @@ To View:
     >npm start
 + Then in web browser, go to this address:
     >http://localhost:3000/
-+ To view list of subscribers:
-    >http://localhost:3000/subscribers
+
 

@@ -1,0 +1,29 @@
+<div class="container">
+    <h2 class="center">Course Table for <%= course.title %></h2>
+<table class="table">
+    <tbody>
+        <tr>
+            <td><strong>Title</strong></td>
+            <td>
+                <%= course.title %>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Description</strong></td>
+            <td>
+                <%= course.description %>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Max Students</strong></td>
+            <td>
+                <%= course.maxStudents %>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Cost</strong></td>
+            <td><%= course.cost %></td>
+        </tr>
+    </tbody>
+</table>
+</div>

@@ -1,0 +1,15 @@
+<div class="form-data container">
+    <h2 class="center">Add New Subscriber</h2>
+    <form action="/subscribers/create" method="POST">
+        <label for="txtName" class="col-form-label">Name</label>
+        <input type="text" name="name" id="txtName" class="form-control" autofocus required>
+
+        <label for="txtEmail" class="col-form-label">Email</label>
+        <input type="email" name="email" id="txtEmail" class="form-control" required>
+
+        <label for="txtZip" class="col-form-label">Zip Code</label>
+        <input type="text" name="zipCode" id="txtZip" class="form-control" required>
+
+        <button type="submit" class="button mt-2">Create</button>
+    </form>
+</div>
