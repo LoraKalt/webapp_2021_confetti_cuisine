@@ -1,10 +1,10 @@
-<div class="form-data container">
+<div class="form-data">
     <h2 class="center">Edit Course</h2>
     <form action="<%=`/courses/${course._id}/update?_method=PUT`%>" method="POST">
         <label for="txtTitle" class="col-form-label">Title</label>
         <input type="text" name="title" id="txtTitle" class="form-control" autofocus required value="<%= course.title %>">
         <label for="txtDesc" class="col-form-label">Description</label>
-        <input type="text" name="description" id="txtDesc" class="form-control" autofocus required value="<%= course.description %>">
+        <input type="text" name="description" id="txtDesc" class="form-control"  required value="<%= course.description %>">
         <label for="txtMaxStudents" class="col-form-label">Max Students</label>
         <input type="text" name="maxStudents" id="txtMaxStudents" class="form-control" required value="<%= course.maxStudents %>">
         <label for="txtCost" class="col-form-label">Cost</label>

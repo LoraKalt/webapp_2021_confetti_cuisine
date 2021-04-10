@@ -1,5 +1,5 @@
-<div class="container">
-    <h2 class="center">Course Table for <%= course.title %></h2>
+<h2 class="center">Course Table for <%= course.title %>
+</h2>
 <table class="table">
     <tbody>
         <tr>
@@ -22,8 +22,9 @@
         </tr>
         <tr>
             <td><strong>Cost</strong></td>
-            <td><%= course.cost %></td>
+            <td>
+                $<%= course.cost %>
+            </td>
         </tr>
     </tbody>
 </table>
-</div>

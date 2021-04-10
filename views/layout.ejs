@@ -14,7 +14,7 @@
 <body>
     <div id="nav">
         <div class="col-sm nav-align">
-            <h1>Confetti Cuisine</h1>
+            <h1 id="title">Confetti Cuisine</h1>
         </div>
         <div class="col-sm nav-align">
             <a href="/">
@@ -23,15 +23,42 @@
             <a href="/courses">
                 <span class="button">Courses</span>
             </a>
-            <a href="/subscribers">
-                <span class="button">Subscribe</span>
+            <a href="/subscribers/">
+                <span class="button">Contact</span>
             </a>
             <a href="/users">
                 <span class="button">Users</span>
             </a>
         </div>
+        <div class="login">
+            <% if (loggedIn){ %>
+                <p>Logged in as <a href="<%=`/users/${currentUser._id}`%>"><%= currentUser.fullName %></a>
+                <span class="log-out"><a href="/users/logout">Log Out</a></span>
+            </p>
+            <% } else { %>
+                <a href="/users/login">Log In</a>
+            </p>
+            <% } %>
+        </div>
     </div>
-    <%- body%>
+
+    <div class="flashes">
+        <% if(flashMessages) { %>
+            <% if(flashMessages.success) { %>
+                <div class="flash success">
+                    <%= flashMessages.success %>
+                </div>
+            <% } else if (flashMessages.error) { %>
+                <div class="flash error">
+                    <%= flashMessages.error %>
+                </div>
+            <% } %>
+        <% } %>
+    </div>
+
+    <div class="container">
+        <%- body %>
+    </div>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
             integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
             crossorigin="anonymous"></script>
