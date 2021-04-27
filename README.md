@@ -1,5 +1,5 @@
 # webapp_2021_confetti_cuisine
-## Authenticating User Classwork
+## API Classwork
 - Lora Kalthoff
 - WebAppDev CSCI 4800
 
@@ -10,8 +10,7 @@ To View:
 3. Then in web browser, go to this address:
     >http://localhost:3000/
 
-There is also test data to test webpage with. Run command before starting npm
->node seed
+
 
 
 
