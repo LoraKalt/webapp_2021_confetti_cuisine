@@ -20,7 +20,8 @@ const express = require("express"),
 
 //mongoose.Promise = global.Promise;
 
-mongoose.connect("mongodb://localhost:27017/confetti_cuisine",
+mongoose.connect(
+    process.env.MONGODB_URI || "mongodb://localhost:27017/confetti_cuisine",
     { useNewUrlParser: true }); //if database doesn't exist, will be created
 mongoose.set("useCreateIndex", true);
 
